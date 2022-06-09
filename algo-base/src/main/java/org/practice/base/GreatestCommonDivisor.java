@@ -1,12 +1,12 @@
 package org.practice.base;
 
 /**
- * 第一个算法：求两个数的最大公约数
+ * 求两个数的最大公约数
  *
  * @author feikong
  * @version 2022/6/7
  */
-public class GCD {
+public class GreatestCommonDivisor {
 
     public static void main(String[] args) {
         System.out.println(gcd(30, 45));
