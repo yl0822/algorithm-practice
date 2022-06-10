@@ -1,7 +1,6 @@
-package org.practice.base;
+package org.practice.base.math;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -39,7 +38,6 @@ public class PrimeFactorization {
                 list.addAll(pf3(p / i));
             }
         }
-        Collections.reverse(list);
         return list;
     }
 

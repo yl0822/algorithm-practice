@@ -1,4 +1,4 @@
-package org.practice.base;
+package org.practice.base.math;
 
 /**
  * 质数判断

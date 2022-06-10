@@ -1,4 +1,4 @@
-package org.practice.base;
+package org.practice.base.math;
 
 /**
  * 求两个数的最大公约数
