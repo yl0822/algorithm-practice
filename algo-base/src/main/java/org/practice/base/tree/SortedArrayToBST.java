@@ -11,7 +11,11 @@ import org.practice.base.data.TreeNode;
 public class SortedArrayToBST {
 
     public static void main(String[] args) {
+        System.out.println(sortedArrayToBST(new int[]{1,2,3,4,5,6,7,8,9,10,-1,-1,11,-1,12}));
+    }
 
+    public static TreeNode sortedArrayToBST(int[] nums){
+        return sortedArrayToBST(nums, 0, nums.length - 1);
     }
 
     private static TreeNode sortedArrayToBST(int[] nums, int left, int right) {

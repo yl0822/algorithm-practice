@@ -1,4 +1,4 @@
-package org.practice.base.collect;
+package org.practice.base.list;
 
 import org.practice.base.data.ListNode;
 

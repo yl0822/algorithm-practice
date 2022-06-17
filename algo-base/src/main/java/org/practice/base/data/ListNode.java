@@ -5,25 +5,35 @@ package org.practice.base.data;
  * @version 2022/6/10
  */
 public class ListNode {
-    public int value;
+    public int val;
     public ListNode next;
 
-    public ListNode(int value, ListNode next) {
-        this.value = value;
+    public ListNode(int val, ListNode next) {
+        this.val = val;
         this.next = next;
     }
 
-    public ListNode(int value){
-        this.value = value;
+    public ListNode(int val){
+        this.val = val;
         this.next = null;
+    }
+
+    public static ListNode init(int... value){
+        ListNode listNode = new ListNode(-1);
+        ListNode temp = listNode;
+        for (int i : value) {
+            temp.next = new ListNode(i);
+            temp = temp.next;
+        }
+        return listNode.next;
     }
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder(value + "");
+        StringBuilder sb = new StringBuilder(val + "");
         ListNode tmp = next;
         while (tmp != null){
-            sb.append(" -> ").append(tmp.value);
+            sb.append(" -> ").append(tmp.val);
             tmp = tmp.next;
         }
         return sb.toString();
