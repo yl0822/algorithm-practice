@@ -2,6 +2,8 @@ package org.practice.base.sort;
 
 import org.practice.base.data.DataPrinter;
 
+import static org.practice.base.data.BaseHelper.swap;
+
 /**
  * @author feikong
  * @version 2022/6/21
@@ -60,17 +62,5 @@ public class HeapSort {
                 break;
             }
         }
-    }
-
-    /**
-     * 交换元素
-     * @param arr
-     * @param a 元素的下标
-     * @param b 元素的下标
-     */
-    public static void swap(int[] arr, int a, int b) {
-        int temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
     }
 }

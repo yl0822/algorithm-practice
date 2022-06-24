@@ -2,7 +2,7 @@ package org.practice.base.sort;
 
 import org.practice.base.data.DataPrinter;
 
-import static org.practice.base.sort.HeapSort.swap;
+import static org.practice.base.data.BaseHelper.swap;
 
 /**
  * @author feikong
@@ -15,7 +15,7 @@ public class QuickSort {
         DataPrinter.printArray(sort(new int[]{2,7,3,4,1,5,6}));
     }
 
-    private static int[] sort(int[] data){
+    public static int[] sort(int[] data){
         return quickSort(data, 0, data.length - 1);
     }
 
