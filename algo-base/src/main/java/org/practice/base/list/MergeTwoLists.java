@@ -1,5 +1,6 @@
 package org.practice.base.list;
 
+
 import org.practice.base.data.ListNode;
 
 /**

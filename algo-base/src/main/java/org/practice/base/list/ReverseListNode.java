@@ -23,12 +23,12 @@ public class ReverseListNode {
 
     /**
      * 三指针移动
-     * */
-    private static ListNode reverseListNode(ListNode head){
+     */
+    private static ListNode reverseListNode(ListNode head) {
         ListNode pre = null;
         ListNode cur = head;
         ListNode next;
-        while (cur != null){
+        while (cur != null) {
             next = cur.next;
             cur.next = pre;
             pre = cur;
@@ -40,14 +40,15 @@ public class ReverseListNode {
     /**
      * 首先考虑 1 -> 2 -> 3 -> 4，递归方案肯定考虑是把234反转之后如何处理第一个节点。
      * 也就是 1 -> 2 <- 3 <- 4，我们显然要考虑将1 -> 2转化为1 <- 2，要考虑如何拿到2。
-     * 因为234反转后的结果应该是4的指针，通常我们就会考虑从4开始回头找2的指针。
+     * 因为234反转后的结果应该是4的指针，通常我们就会考虑从4开始回头找2的指针，这其实是可以的。
      * 但其实有更简单的办法，那就是1，1的next是啥，其实就是2，所以这里最关键一步就是把1的next(也就是2)的next指向1自己。
-     * */
-    private static ListNode reverseListNode2(ListNode head){
-        if (head == null || head.next == null){
+     */
+    private static ListNode reverseListNode2(ListNode head) {
+        if (head == null || head.next == null) {
             return head;
         }
         ListNode ret = reverseListNode2(head.next);
+//        ListNode.getLastNode(ret).next = head;
         head.next.next = head;
         head.next = null;
         return ret;

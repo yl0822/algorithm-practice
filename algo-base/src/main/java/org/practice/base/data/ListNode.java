@@ -28,6 +28,16 @@ public class ListNode {
         return listNode.next;
     }
 
+    public static ListNode getLastNode(ListNode listNode){
+        if (listNode == null){
+            return null;
+        }
+        while (listNode.next != null){
+            listNode = listNode.next;
+        }
+        return listNode;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder(val + "");
