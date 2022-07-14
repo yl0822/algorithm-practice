@@ -1,7 +1,5 @@
 package org.practice.base.scene;
 
-import org.practice.base.data.ListNode;
-
 import java.util.Stack;
 
 /**
@@ -21,6 +19,8 @@ import java.util.Stack;
  * @version 2022/6/28
  */
 public class MinStack {
+    // 存储每一次push之后最小值的快照历史，如果只有一个int值存储会丢掉历史，导致如果原最小值被pop之后无法更新最小值。
+    // 和正真数据存储stack同步操作，保证快照历史和stack中元素一致。
     private Stack<Integer> min;
     private Stack<Integer> stack;
 

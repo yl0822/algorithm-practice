@@ -1,7 +1,6 @@
 package org.practice.base.data;
 
 import com.sun.crypto.provider.RC2Cipher;
-import sun.misc.Unsafe;
 import sun.reflect.Reflection;
 
 /**
@@ -24,6 +23,14 @@ public class BaseHelper {
         int temp = arr[a];
         arr[a] = arr[b];
         arr[b] = temp;
+    }
+
+    public static int max(int[] arr){
+        int max = Integer.MIN_VALUE;
+        for (int i : arr) {
+            max = Math.max(i, max);
+        }
+        return max;
     }
 
 }
