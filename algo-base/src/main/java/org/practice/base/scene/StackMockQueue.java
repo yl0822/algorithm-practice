@@ -47,6 +47,14 @@ public class StackMockQueue {
                 }
             }
         }
-        return output.pop();
+        return output.peek();
+    }
+
+    public int peek() {
+        return output.push(dequeue());
+    }
+
+    public boolean empty() {
+        return output.isEmpty() && input.isEmpty();
     }
 }
