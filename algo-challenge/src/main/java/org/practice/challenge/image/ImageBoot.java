@@ -14,7 +14,6 @@ import static org.practice.challenge.image.ImageUtil.write2File;
  * @version 2022/9/14
  */
 public class ImageBoot {
-    private static final String INPUT_IMAGE_URL = "https://graphic-design-cos.kujiale.com/qhgeom/null/ppttranslation/ppt/2022/09/14/166314376830300913.png";
     private static final String INPUT_IMAGE = "C:\\Users\\Administrator\\Desktop\\166208709084707846.png";
     private static final String INPUT_PPT = "C:\\Users\\Administrator\\Desktop\\4444.pptx";
     private static final String OUTPUT_PATH = "C:\\Users\\Administrator\\Desktop\\" + System.currentTimeMillis() + ".png";
