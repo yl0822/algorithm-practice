@@ -17,7 +17,7 @@ import java.util.Map;
  */
 @Api(tags = "脚本控制")
 @RestController
-@RequestMapping("/api/meijian/cms/graphicdesign/backend/script")
+@RequestMapping("/api")
 public class ScriptController {
     @Autowired
     private Map<String, DataProcessScript> scriptMap;
