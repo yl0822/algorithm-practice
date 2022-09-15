@@ -14,7 +14,6 @@ import java.util.List;
  * @author feikong
  * @version 2022 /7/25
  */
-@Slf4j
 public abstract class AbstractProcessScript<T> implements DataProcessScript {
     protected static final String LOG_PREFIX = "[SCRIPT] -- ";
     protected ThreadPoolTaskExecutor scriptDataExecutor;
