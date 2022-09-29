@@ -22,10 +22,11 @@ public class ImageBoot {
     public static void main(String[] args) throws Exception{
 //        write2File(readBytesByStreamFromUrl(INPUT_IMAGE_URL), OUTPUT_PATH);
 //        write2File(readBytesByStreamFromPath(INPUT_IMAGE), OUTPUT_PATH);
-//        write2File(readBytesByBuffer(INPUT_IMAGE), OUTPUT_PATH);
+        write2File(readBytesByBuffer(INPUT_IMAGE), OUTPUT_PATH);
 //        readBytesByBufferWithoutCompress(INPUT_IMAGE, OUTPUT_PATH);
 //        write2File(readBytesByPpt(INPUT_PPT), OUTPUT_PATH);
 
-        System.out.println(new SimpleImageInfo(new FileInputStream(INPUT_IMAGE)));
+//        System.out.println(new SimpleImageInfo(new FileInputStream(INPUT_IMAGE)));
+//        CmykConverter.rgbToCmyk(INPUT_IMAGE, OUTPUT_PATH);
     }
 }

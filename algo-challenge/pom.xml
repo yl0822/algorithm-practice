@@ -74,6 +74,11 @@
             <version>1.4</version>
         </dependency>
         <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>4.5.13</version>
@@ -82,6 +87,21 @@
             <groupId>com.twelvemonkeys.imageio</groupId>
             <artifactId>imageio-jpeg</artifactId>
             <version>3.8.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-imaging</artifactId>
+            <version>1.0-alpha3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sanselan</groupId>
+            <artifactId>sanselan</artifactId>
+            <version>0.97-incubator</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qunhe.geom-middleware</groupId>
+            <artifactId>graphic-design-service-data</artifactId>
+            <version>0.0.51-PPTTEXT-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

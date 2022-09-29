@@ -1,5 +1,6 @@
 package org.practice.challenge.ppt;
 
+import com.qunhe.geom.middleware.graphic.design.service.data.worker.ppt.request.PptImageData;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -9,10 +10,6 @@ import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.poi.sl.usermodel.PictureData;
 import org.apache.poi.sl.usermodel.ShapeType;
 import org.apache.poi.xslf.usermodel.*;
-import org.practice.challenge.ppt.data.PptImageData;
-import org.practice.challenge.ppt.utils.SlideShowUtil;
-
-import java.awt.Color;
 import java.awt.geom.Rectangle2D;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
