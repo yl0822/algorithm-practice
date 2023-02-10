@@ -17,7 +17,6 @@ import java.util.Map;
  */
 @Api(tags = "脚本控制")
 @RestController
-@RequestMapping("/api/meijian/cms/graphicdesign/backend/script")
 public class ScriptController {
     @Autowired
     private Map<String, DataProcessScript> scriptMap;
@@ -63,6 +62,6 @@ public class ScriptController {
     }
 
     private static boolean checkAuth(String pwd) {
-        return "graphicdesign".equals(pwd);
+        return "xxx".equals(pwd);
     }
 }
